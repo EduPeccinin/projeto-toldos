@@ -626,13 +626,13 @@ ol {
 
 .hero-trust-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   font-size: 0.88rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  white-space: nowrap;
+  line-height: 1.4;
 }
 
 .hero-trust-item svg {
