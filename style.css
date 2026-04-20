@@ -487,6 +487,7 @@ ol {
   align-items: center;
   overflow: hidden;
   background: var(--charcoal-deep);
+  padding: 120px 0 60px 0;
 }
 
 .hero-bg {
@@ -518,8 +519,8 @@ ol {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
-  background: linear-gradient(to top, var(--white), transparent);
+  height: 40px;
+  background: linear-gradient(to top, rgba(255,255,255,0.15), transparent);
   z-index: 3;
 }
 
@@ -610,17 +611,28 @@ ol {
 .hero-trust {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   animation: fadeInUp 1s var(--ease-out) 1s both;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: inline-flex;
+  align-self: flex-start;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .hero-trust-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
 }
 
 .hero-trust-item svg {
@@ -1964,9 +1976,10 @@ ol {
   .hero-content {
     padding-top: 90px;
     /* Glassmorphism backdrop para garantir contraste no mobile */
-    background: rgba(20, 20, 20, 0.35);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: var(--radius-lg);
     padding: 28px 24px;
     padding-top: 110px;
