@@ -1965,6 +1965,18 @@ ol {
     font-size: clamp(2rem, 7vw, 2.8rem);
   }
 
+  .hero-bg::after {
+    height: 80px;
+  }
+
+  .hero-trust-item {
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-trust-item svg {
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+  }
+
   .hero-buttons {
     flex-direction: column;
   }
